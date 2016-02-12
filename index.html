@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"/>
+  <title>reto2</title>
+  <link rel="stylesheet" type="text/css" href="public/style.css">
+  <style type="text/css">
+
+    .slider-section-div{
+      width:100%;
+    }
+      #bubblecontent{
+          
+          width:100%;
+          height: 500px;
+      }
+
+      #imagen-slider{
+        width:100%;
+        
+        height:100%;
+      }
+      #rey0{
+        width:100%;
+        height: 500px;
+       
+      }
+
+      h1{
+        color: #FFF;
+      }
+
+
+
+
+  </style>
+</head>
+<body>
+    <header>
+      <section id="section-logo">
+              
+                <svg id="svg-logo">
+                  
+                  <path class="logo-header">
+                      <animate id="anime" attributeName="d" dur="5s" 
+                        values="M 0 50 L 40 100 L 80 100 L 120 50 L 160 0 L 200 0 L 240 50 L 280 100 L 320 100 L 360 100;
+                                M 0 50 L 40 100 L 80 100 L 120 50 L 160 0 L 200 0 L 240 50 L 280 100 L 320 100 L 360 50;
+                                M 0 100 L 40 100 L 80 100 L 120 50 L 160 0 L 200 0 L 240 50 L 280 100 L 320 100 L 360 50;
+                                M 0 50 L 40 100 L 80 100 L 120 50 L 160 0 L 200 0 L 240 50 L 280 100 L 320 100 L 360 50;
+                                M 0 50 L 40 100 L 80 100 L 120 50 L 160 0 L 200 0 L 240 50 L 280 100 L 320 100 L 360 100;" repeatCount="indefinite"/>
+                                     
+                  </path>
+                        <text x="102"  y="100"
+                                style="font-family: Arial;
+                                       font-size  : 30;
+                                       stroke     : #000;
+
+                                       fill       : #fff;">REYNALDO
+                        </text>    
+                </svg>
+      </section>
+      <section id="section-nav">
+        <nav>
+            <ul>
+                <li>
+                <button id="inicia1">HOME</button>
+                    <ul id="submenu1" class="submenu">
+                        <li><button class="boton"><a href="#">inicio</a></button></li>
+                        <li><button class="boton"><a href="#">mision</a></button></li>
+                        <li><button class="boton"><a href="#">vision</a></button></li>
+                        <li><button class="boton"><a href="#">localizacion</a></button></li>
+                    </ul>
+
+                </li>
+                <li>
+                <button id="inicia2">INICIO</button>
+                      <ul id="submenu2" class="submenu">
+                        <li><button class="boton"><a href="#">informacion</a></button></li>
+                        <li><button class="boton"><a href="#">codigo</a></button></li>
+                        <li><button class="boton"><a href="#">recursos</a></button></li>
+                        
+                      </ul>
+                </li>
+                <li>
+                <button id="inicia3">CONTACTO</button>
+                  <ul id="submenu3" class="submenu">
+                      <li><button class="boton"><a href="#">buscar</a></button></li>
+                      <li><button class="boton"><a href="#">identificar</a></button></li>
+                      <li><button class="boton"><a href="#">perfil</a></button></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+        <section id="section-main-principal">
+           
+            <div class="slider-section-div">
+                  <div id="bubbles">
+                    <div onclick="bubbles(0);"></div>
+                    <div onclick="bubbles(1);"></div>
+                    <div onclick="bubbles(2);"></div>
+                    
+                  </div>
+                  <div id="bubblecontent">
+                    <div id="rey0">
+                    <img  id="imagen-slider"  src="imagenes/1.jpg"/>
+                    
+                    </div>
+                  </div>
+
+            </div>
+        </section>
+        <section id="section-main-segundario">
+              <article id="articulo1" class="articulo">
+                <div id="imagen-articulo1">
+                <img src="imagenes/html5.jpg" class="imagen-segundaria">
+                </div>
+                <div id="parrafo-articulo1">
+                  <p>HTML es el lenguaje que se emplea para el desarrollo de páginas de internet. Está compuesto por una seríe de etiquetas que el navegador interpreta y da forma en la pantalla.</p>
+                </div>
+              </article>
+              <article id="articulo2" class="articulo">
+                <div id="imagen-articulo2">
+                <img src="imagenes/css.jpg" class="imagen-segundaria">
+                </div>
+                <div id="parrafo-articulo2">
+                  <p>CSS es un lenguaje utilizado en la presentación de documentos HTML. Un documento HTML viene siendo coloquialmente “una página web”. Entonces podemos decir que el lenguaje CSS sirve para organizar la presentación y aspecto de una página web.</p>
+                </div>
+              </article>
+              <article id="articulo3" class="articulo">
+                  <div id="imagen-articulo3">
+                <img src="imagenes/javascript.jpg" class="imagen-segundaria">
+                </div>
+                <div id="parrafo-articulo3">
+                  <p>Tras desterrar al flash, el HTML5 se ha convertido en el rey de los lenguajes web por ser semántico, adaptable, flexible, escalable y multiplataforma. En Go Móvil, y dadas sus múltiples ventajas, no dudamos en utilizarlo para el desarrollo de soluciones móviles destinadas a grandes y pequeñas empresas.</p>
+                </div>
+              </article>
+        </section>
+        <section id="section-main-tercero">
+            <article id="articulo1-tercero" >
+                  <svg id="articulo2-svg" width="400" height="400" >
+                           
+                            <path class="loveCurve">
+                                    <animate id="anime" attributeName="d" dur="5s" 
+                                    values="M 80 200 C 120 250, 160 250, 200 200 C 240 150, 280 150, 320 200;
+                                            M 80 200 C 120 150, 160 150, 200 200 C 240 250, 280 250, 320 200;
+                                            M 80 200 C 120 250, 160 250, 200 200 C 240 150, 280 150, 320 200;" repeatCount="indefinite"/>
+                                    <animateMotion dur="6s" repeatCount="indefinite">
+                                    <mpath xlink:href="#theMotionPath"/>
+                                    </animateMotion>
+                            </path>
+
+                            <path class="loveCurve">
+                                  <animate id="anime" attributeName="d" dur="5s" 
+                                  values="M 200 310 C 150 270, 150 230, 200 200 C 250 160, 250 120, 200 80;
+                                          M 200 310 C 250 270, 250 230, 200 200 C 150 160, 150 120, 200 80;
+                                          M 200 310 C 150 270, 150 230, 200 200 C 250 160, 250 120, 200 80;" 
+                                        repeatCount="indefinite"/>
+                                  
+                            </path>
+
+                            <text x="170"  y="60"
+                                style="font-family: Arial;
+                                       font-size  : 30;
+                                       stroke     : #000;
+
+                                       fill       : #fff;">SVG
+                            </text> 
+                              
+                    </svg>
+            </article>
+            <article id="articulo2-tercero">
+              <section class="contenedor">
+                  <section class="carta">
+                    <section class="lado frente">
+                      <img class="imagen" src="imagenes/html5vsflash.jpg">
+                    </section>
+                    <section class="lado atras">
+                      <h3>mas informacion ...</h3>
+                      <ul class="espacio-menu">
+                        <li class="etiquetas">etiquetas</li>
+                        <li class="etiquetas">propiedades</li>
+                        <li class="etiquetas">elementos</li>
+                      </ul>
+                    </section>
+                  </section>
+              </section>
+            </article>
+        </section>
+    </main>
+    <footer> 
+        <img class="imagen-footer" src="imagenes/facebook.png">
+        <img class="imagen-footer" src="imagenes/google2.png">     
+        <img class="imagen-footer" src="imagenes/twitter2.png">   
+    </footer>
+
+
+    <script src="menu.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>

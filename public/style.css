@@ -1,0 +1,572 @@
+/*--reset--*/
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #222;
+}
+
+
+/*--estilo al header--*/
+header{
+	/*background-color: #081132;*/
+	height: auto;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+  background-color: #000;
+  z-index: 4;
+}
+/*--estilo al logo--*/
+#section-logo{
+	width: 380px;
+	
+	padding-left: 10px;	
+	height: 100px;
+}
+
+
+#svg-logo{
+ 	width: 380px;
+ 	height: 100px;
+    
+
+   }
+.logo-header{   		
+	 fill:#fff;
+	 opacity:0.6;
+   }
+
+/*estilo al nav*/
+#section-nav{
+	background-color: #000;
+	
+	
+}
+/*para que inicie desactivado el menu*/
+ul li ul{
+	display: none;
+}
+
+ul{
+	padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#section-nav>nav>ul>li{
+	display: inline-block;
+}
+
+#section-nav>nav>ul>li>button{
+	background-color: #000;
+	width: 100px;
+	height: 100px;
+	border:none;
+	color: #FFF;
+}
+
+#section-nav>nav>ul>li>button:hover{
+	background-color: #222;
+  cursor: pointer;
+}
+
+
+
+
+   /*--seccion del main pincipal--*/
+   main{
+   	width: 100%;
+   	background-color: #444;
+   	height: auto;
+   	border: 1px solid #000;
+
+
+       /*degradado*/
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,595959+9,666666+15,000000+22,000000+22,000000+27,000000+31,474747+39,000000+40,2c2c2c+51,111111+65,2b2b2b+81,1c1c1c+91,131313+100 */
+      background: #4c4c4c; /* Old browsers */
+      background: -moz-linear-gradient(-45deg,  #4c4c4c 0%, #595959 9%, #666666 15%, #000000 22%, #000000 22%, #000000 27%, #000000 31%, #474747 39%, #000000 40%, #2c2c2c 51%, #111111 65%, #2b2b2b 81%, #1c1c1c 91%, #131313 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg,  #4c4c4c 0%,#595959 9%,#666666 15%,#000000 22%,#000000 22%,#000000 27%,#000000 31%,#474747 39%,#000000 40%,#2c2c2c 51%,#111111 65%,#2b2b2b 81%,#1c1c1c 91%,#131313 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg,  #4c4c4c 0%,#595959 9%,#666666 15%,#000000 22%,#000000 22%,#000000 27%,#000000 31%,#474747 39%,#000000 40%,#2c2c2c 51%,#111111 65%,#2b2b2b 81%,#1c1c1c 91%,#131313 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+   }
+
+   #section-main-principal{
+   		width: calc(100% - 12px);
+   		height: 500px;
+   		margin-top: 100px;
+      border:6px solid #FFF;
+      border-radius: 5px;
+
+      
+   		
+
+   }
+
+
+   /*--seccion del main pincipal--*/
+
+   #section-main-segundario{
+   	
+   	width: 100%;
+   	height: 500px;
+
+   }
+
+   a{
+   	text-decoration: none;
+   	color: #FFF;
+   	font-size: 1.1em;
+   }
+
+  .submenu{
+  	width: 100px;
+  	background-color: #000;
+  }
+
+  .submenu>li{
+  	width: 100%;
+  	background-color: #000;
+  }
+
+  .boton{
+  	width: 100%;
+  	background-color: #000;
+  	height: 40px;
+  	text-align: left;
+  }
+
+
+
+
+/*--tamaño 700px--*/
+   @media screen and (max-width: 715px){
+
+		 #section-main-principal{
+   		
+   		margin-top: 200px;
+   		
+
+   			}
+	
+   }
+
+   /*--tamaño 400px--*/
+   @media screen and (max-width: 400px){
+		#section-nav{
+		   	
+		   	width: 100%;
+		   	
+		   }
+    	#section-nav >nav>ul>li{
+		   	
+		   	width: 100%;
+		   	
+		   }
+		#section-nav>nav>ul>li>button{
+			
+			width: 100%;
+			
+			border:none;
+			color: #FFF;
+		}
+
+		 #section-main-principal{
+   		
+   		margin-top: 400px;
+   		
+
+   		
+
+   			}
+
+
+   			/*botones */
+   				.submenu{
+				  	width: 100%;
+
+				  	
+				  }
+
+				  .submenu>li{
+				  	width: 100%;
+				  	
+				  }
+
+				  .boton{
+				  	width: 100%;
+				  	text-align: center;
+
+				  }
+   }
+
+
+   /*estilos para el section segundaria*/
+
+
+   #section-main-segundario{
+   	display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    height: auto;
+
+       
+    
+
+   }
+
+   .articulo{
+
+   	
+   	width: calc(33.33% - 60px);
+   	height: auto;
+    margin: 10px;
+    border:1px solid #fff;
+    border-radius: 10px;
+    
+    
+
+   }
+
+   
+
+   @media screen and (max-width: 1570px){
+      #articulo1 {
+
+    
+    margin: 10px;
+    padding: 0;
+    width: 48%;
+                  }
+
+      #articulo2 {
+
+    
+    margin: 10px;
+    padding: 0;
+    width: 48%;
+                  }
+
+      #articulo3{
+        
+        margin: 10px;
+        padding: 0;
+        width: 100%;
+      }
+
+   }
+
+
+   @media screen and (max-width: 1120px){
+      #articulo1 {
+
+    
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    
+
+   }
+   #articulo2 {
+
+    
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    
+
+   }
+   #articulo3 {
+
+    
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    
+
+   }
+   
+   
+   
+      
+   }
+
+  .imagen-segundaria{
+    width:calc(30% - 20px);
+    padding: 10px;
+    text-align: center;
+    
+    border-radius: 50%;
+
+   }
+
+   p{
+    
+    font-size: 1.3em;
+    color: #fff;
+   }
+
+   #articulo1{
+    display: flex;
+    flex-direction:column;
+    
+    
+   }
+
+   #imagen-articulo1{
+      
+      
+      width: 100%;
+      height: 120px;
+      display: flex;
+      justify-content:center
+   }
+
+   #parrafo-articulo1{
+      padding: 10px;
+      text-align: justify;
+   }
+
+   /*articulo 2*/
+
+   #articulo2{
+    display: flex;
+    flex-direction:column;
+    
+    
+   }
+
+   #imagen-articulo2{
+      
+      
+      width: 100%;
+      height: 120px;
+      display: flex;
+      justify-content:center;
+
+      
+
+   }
+
+   #parrafo-articulo2{
+      padding: 10px;
+      text-align: justify;
+   }
+
+/*--articulo3--*/
+   #articulo3{
+    display: flex;
+    flex-direction:column;
+    
+    
+   }
+
+   #imagen-articulo3{
+      
+      
+      width: 100%;
+      height: 120px;
+      display: flex;
+      justify-content:center;
+
+      
+
+   }
+
+   #parrafo-articulo3{
+      padding: 10px;
+      text-align: justify;
+   }
+/*fin del main segundario*/
+
+   /*seccion main terciaria*/
+
+   #section-main-tercero{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+
+
+   }
+
+   #articulo1-tercero{
+    width: calc(50% - 10px);
+    min-width: 400px;
+    height: 380px;
+    border-radius: 50%;
+    border:3px solid #FFF;
+
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      
+    
+   }
+
+
+   #articulo2-tercero{
+    width: calc(50% - 110px);
+    height: 500px;
+    min-width: 400px;
+    margin: 50px;
+    z-index: 3;
+    }
+
+    .contenedor{
+      
+      width: 100%;
+      height: 500px;
+
+      
+      -webkit-perspective:700;
+      -moz-perspective:700;
+      border-radius: 10px;
+    }
+    .carta{
+      height: 100%;
+      width: 100%;
+      position: relative;
+      transform-style:preserve-3d;
+      transition:2s;
+      box-shadow: 0px 0px 2px #FFF;
+      border-radius: 10px;
+    }
+
+    .carta:hover{
+      transform:rotateY(180deg);
+    }
+
+    .lado{
+      width: 100%;
+      height: 100%;
+      backface-visibility:hidden;
+      position: absolute;
+
+    }
+
+    .frente{
+      border-radius: 10px;
+    }
+
+    .atras{
+      
+      transform:rotateY(180deg);
+    }
+
+    .imagen{
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    h3{
+      text-align: center;
+      color: #FFF;
+      font-size: 1.5em;
+    }
+
+    .espacio-menu{
+      display: flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      line-height: 50px;
+      color: #FFF;
+      font-size: 1.5em;
+      
+    }
+    .etiquetas{
+      background-color: #000;
+      width: 50%;
+      margin: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .etiquetas:hover{
+      background-color: #444;
+      cursor: pointer;
+    }
+    .etiquetas:active{
+      transform:scale(.90);
+    }
+
+
+   @media screen and (max-width: 860px){
+                #articulo1-tercero{
+              width: 100%;
+             }
+
+             #articulo2-tercero{
+              width: 100%;
+             }
+
+             }
+
+
+             .imagenes-tercero{
+
+
+              width:calc(50% - 20px);
+             
+
+              margin: 10px;
+              display: flex;
+              justify-content:center;
+              align-items:center;
+
+
+
+             }
+
+
+
+/*--footer--*/
+
+
+footer{
+   background-color: #000;
+   display: flex;
+   justify-content:space-around;
+   align-items:center;
+   height: 120px;
+}
+
+.imagen-footer{
+    width: 80px;
+}
+
+.imagen-footer:hover{
+    filter:alpha(opacity=40);
+    -moz-opacity:0.4;
+    -khtml-opacity:0.4;
+    opacity: 0.4;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 400px){
+    .imagenes-tercero{
+
+
+    width:100%;
+
+   }
+}
+   
+
+
+
+
+ 
+
+
+   
